@@ -1,0 +1,74 @@
+:root {
+  font-size: 62.5%;
+  --melanzane-50: #fcf3fc;
+  --melanzane-100: #fae9fa;
+  --melanzane-200: #f6d4f6;
+  --melanzane-300: #f0b1ee;
+  --melanzane-400: #e680e1;
+  --melanzane-500: #da5ad1;
+  --melanzane-600: #c73bb6;
+  --melanzane-700: #ac2a99;
+  --melanzane-800: #8e267d;
+  --melanzane-900: #772469;
+  --melanzane-950: #260821;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  text-align: center;
+  margin: 5rem;
+}
+
+.whole-drum{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 5rem auto 1rem;
+  width: min-content;
+}
+
+.drum-pad {
+  width: 10rem;
+  height: 10rem;
+  border: .2rem solid var(--melanzane-300);
+  border-radius: 1rem;
+  background-color: var(--melanzane-800);
+  color: var(--melanzane-300);
+  font-size: 2rem;
+  font-weight: bolder;
+  box-shadow: .4rem .4rem .8rem var(--melanzane-900);
+  transition: all ease-in-out .2s;
+}
+
+.drum-pad:focus {
+  outline: none;
+  background-color: var(--melanzane-600);
+  border: .2rem solid var(--melanzane-100);
+  color: var(--melanzane-100);
+  box-shadow: .4rem .4rem .8rem var(--melanzane-600);
+}
+
+#display {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo p {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+#logo img {
+  width: 5rem;
+  height: 5rem;
+}
